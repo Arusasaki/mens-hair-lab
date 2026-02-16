@@ -5,39 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>【本音レビュー】32歳営業マンがスカルプDネクストプラスを半年使った結果</title>
-  <meta name="description" content="スカルプDネクストプラスを実際に半年間使ってみた正直なレビュー。ヘアスタイルの悩みは変わったのか？">
+  <title>まだ「育毛剤」に頼ってるの？泥だらけの畑に肥料を撒くのは、もうやめましょう。</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap"
+    rel="stylesheet">
   <style>
     /* ========================================
-       スカルプD NEXT+ 記事LP
-       - モバイルファースト
-       - メンズ向けダークプレミアムトーン
-       - CVR最大化設計
+       スカルプD NEXT+ 記事LP v2
+       行動経済学ハック版
+       - 損失回避 × 現在志向バイアス
        ======================================== */
 
     :root {
-      --text-primary: #1a1a2e;
-      --text-secondary: #4a4a5a;
-      --text-muted: #8a8a9a;
-      --bg-main: #f5f5f7;
+      --text-primary: #1b1b1b;
+      --text-body: #333;
+      --text-secondary: #555;
+      --text-muted: #888;
+      --bg-page: #f8f7f4;
       --bg-white: #ffffff;
       --bg-dark: #1a1a2e;
-      --bg-highlight: #f0f7ff;
-      --bg-concern: #fff5f5;
-      --accent: #00a86b;
-      --accent-hover: #008f5b;
-      --accent-soft: #e6f7f0;
-      --brand-teal: #00897b;
-      --brand-dark: #263238;
-      --border: #e0e0e8;
-      --star: #ffc107;
-      --orange: #ff6b35;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
-      --radius: 12px;
+      --bg-danger: #fff5f5;
+      --bg-warn: #fffbeb;
+      --bg-success: #f0fdf4;
+      --bg-blue: #eff6ff;
+      --red: #dc2626;
+      --red-soft: #fef2f2;
+      --green: #16a34a;
+      --green-dark: #15803d;
+      --green-soft: #dcfce7;
+      --amber: #d97706;
+      --blue: #2563eb;
+      --border: #e5e5e5;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     }
 
     * {
@@ -47,545 +47,511 @@
     }
 
     body {
-      font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+      font-family: "Noto Sans JP", sans-serif;
       font-size: 16px;
-      line-height: 1.9;
-      color: var(--text-primary);
-      background: var(--bg-main);
+      line-height: 2;
+      color: var(--text-body);
+      background: var(--bg-page);
       -webkit-font-smoothing: antialiased;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+    .serif {
+      font-family: "Noto Serif JP", serif;
     }
 
-    /* ---- PR表記（ステマ規制対応） ---- */
-    .pr-label {
+    /* ---- Disclosure ---- */
+    .disclosure {
       text-align: center;
       font-size: 11px;
       color: var(--text-muted);
       padding: 6px;
-      background: var(--bg-main);
+      background: #f0f0f0;
       border-bottom: 1px solid var(--border);
     }
 
-    /* ---- Header ---- */
-    .site-header {
+    /* ---- Article Shell ---- */
+    .article {
+      max-width: 680px;
+      margin: 0 auto;
       background: var(--bg-white);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 16px;
+    }
+
+    .article-body {
+      padding: 28px 22px 40px;
+    }
+
+    /* ==============================
+       SECTION 1 - HERO / HEADLINE
+       認知的不協和の創出
+       ============================== */
+    .hero {
+      background: linear-gradient(170deg, #0f172a 0%, #1e293b 100%);
+      padding: 40px 22px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--red), var(--amber), var(--green));
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 12px;
+      border-radius: 3px;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-family: "Noto Serif JP", serif;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 .red {
+      color: #fca5a5;
+    }
+
+    .hero h1 .green {
+      color: #86efac;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.8;
+    }
+
+    /* ---- Visual Comparison ---- */
+    .visual-compare {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 8px;
+      align-items: center;
+      margin: 28px 0 0;
+    }
+
+    .visual-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 18px 12px;
       text-align: center;
     }
 
-    .site-header .logo {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--brand-dark);
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    .visual-box.bad {
+      border-color: rgba(239, 68, 68, 0.3);
+      background: rgba(239, 68, 68, 0.05);
     }
 
-    .site-header .category {
+    .visual-box.good {
+      border-color: rgba(34, 197, 94, 0.3);
+      background: rgba(34, 197, 94, 0.05);
+    }
+
+    .visual-box .icon {
+      font-size: 36px;
+      margin-bottom: 6px;
+    }
+
+    .visual-box .label {
       font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 2px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
 
-    /* ---- Article Container ---- */
-    .article {
-      max-width: 640px;
-      margin: 0 auto;
-      background: var(--bg-white);
-      min-height: 100vh;
+    .visual-box.bad .label {
+      color: #fca5a5;
     }
 
-    .article-inner {
-      padding: 24px 20px;
+    .visual-box.good .label {
+      color: #86efac;
     }
 
-    /* ---- Article Meta ---- */
-    .article-meta {
+    .visual-arrow {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 24px;
+    }
+
+    /* ==============================
+       META INFO
+       ============================== */
+    .meta-bar {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--border);
       font-size: 12px;
       color: var(--text-muted);
     }
 
-    .article-meta .tag {
-      background: var(--accent-soft);
-      color: var(--accent);
-      padding: 3px 10px;
+    .meta-bar .reading-time {
+      background: var(--bg-page);
+      padding: 2px 10px;
       border-radius: 4px;
-      font-weight: 700;
-      font-size: 11px;
+      font-weight: 500;
     }
 
-    /* ---- First View ---- */
-    .article-title {
-      font-size: 22px;
+    /* ==============================
+       TYPOGRAPHY
+       ============================== */
+    .article-body h2 {
+      font-family: "Noto Serif JP", serif;
+      font-size: 20px;
       font-weight: 900;
-      line-height: 1.55;
-      margin-bottom: 20px;
+      line-height: 1.6;
+      margin: 48px 0 20px;
       color: var(--text-primary);
     }
 
-    .article-title .highlight {
-      background: linear-gradient(transparent 60%, #c8f7dc 60%);
+    .article-body h3 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin: 36px 0 14px;
+      padding-left: 14px;
+      border-left: 4px solid var(--text-primary);
+      color: var(--text-primary);
+    }
+
+    .article-body p {
+      margin-bottom: 22px;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .red-text {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    .green-text {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .marker {
+      background: linear-gradient(transparent 55%, #fde68a 55%);
+      font-weight: 700;
       padding: 0 2px;
     }
 
-    /* ---- Hero Image ---- */
-    .hero-image-wrap {
-      position: relative;
-      border-radius: var(--radius);
-      overflow: hidden;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow-md);
+    .marker-red {
+      background: linear-gradient(transparent 55%, #fecdd3 55%);
+      font-weight: 700;
+      padding: 0 2px;
     }
 
-    .hero-image {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      background: linear-gradient(135deg, #263238 0%, #00897b 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-image-text {
-      color: white;
+    .large-text {
+      font-size: 20px;
+      font-weight: 900;
       text-align: center;
-      padding: 20px;
-    }
-
-    .hero-image-text .brand {
-      font-size: 28px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 4px;
-    }
-
-    .hero-image-text .sub {
-      font-size: 14px;
-      opacity: 0.85;
-    }
-
-    .hero-badge {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      background: var(--orange);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: 4px;
-    }
-
-    /* ---- Author Box ---- */
-    .author-box {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 16px;
-      background: var(--bg-main);
-      border-radius: var(--radius);
-      margin-bottom: 32px;
-    }
-
-    .author-avatar {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 18px;
-    }
-
-    .author-info .name {
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .author-info .desc {
-      font-size: 12px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    /* ---- Section Headings ---- */
-    h2 {
-      font-size: 19px;
-      font-weight: 900;
-      line-height: 1.5;
-      margin: 44px 0 18px;
-      padding-bottom: 10px;
-      border-bottom: 3px solid var(--accent);
-      position: relative;
-    }
-
-    h3 {
-      font-size: 17px;
-      font-weight: 700;
-      margin: 30px 0 14px;
-      padding-left: 14px;
-      border-left: 4px solid var(--accent);
-      line-height: 1.5;
-    }
-
-    /* ---- Body Text ---- */
-    p {
-      margin-bottom: 20px;
+      line-height: 1.8;
+      margin: 32px 0;
       color: var(--text-primary);
     }
 
-    .emphasis {
-      font-weight: 700;
-      color: var(--accent);
+    /* ==============================
+       DANGER BOX (損失回避セクション)
+       ============================== */
+    .danger-box {
+      background: var(--bg-danger);
+      border: 1px solid #fecdd3;
+      border-left: 4px solid var(--red);
+      border-radius: 8px;
+      padding: 22px 18px;
+      margin: 24px 0;
     }
 
-    .red-em {
-      font-weight: 700;
-      color: #e53e3e;
-    }
-
-    .underline-em {
-      background: linear-gradient(transparent 60%, #c8f7dc 60%);
-      font-weight: 700;
-    }
-
-    /* ---- 数字ハイライト ---- */
-    .number-highlight {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 28px;
-      font-weight: 900;
-      color: var(--accent);
-      line-height: 1;
-    }
-
-    .number-highlight .unit {
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    /* ---- Concern List ---- */
-    .concern-list {
-      background: var(--bg-concern);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin: 20px 0;
-      border: 1px solid #ffe0e0;
-    }
-
-    .concern-list .lead {
-      font-weight: 700;
-      margin-bottom: 12px;
-      font-size: 15px;
-      color: #c53030;
-    }
-
-    .concern-list ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .concern-list li {
-      padding: 8px 0;
-      padding-left: 28px;
-      position: relative;
-      font-size: 15px;
-      border-bottom: 1px dashed #ffd0d0;
-    }
-
-    .concern-list li:last-child {
-      border-bottom: none;
-    }
-
-    .concern-list li::before {
-      content: "😩";
-      position: absolute;
-      left: 0;
-      font-size: 14px;
-    }
-
-    /* ---- Feature Card ---- */
-    .feature-card {
-      background: var(--bg-main);
-      border-radius: var(--radius);
-      padding: 24px 20px;
-      margin: 16px 0;
-      border: 1px solid var(--border);
-    }
-
-    .feature-card .feature-num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      background: var(--accent);
-      color: white;
-      font-size: 14px;
-      font-weight: 900;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
-
-    .feature-card .feature-title {
-      display: inline;
-      font-size: 16px;
-      font-weight: 700;
-    }
-
-    .feature-card .feature-desc {
-      margin-top: 10px;
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.8;
-    }
-
-    /* ---- Reviews ---- */
-    .review-card {
-      background: var(--bg-main);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin: 16px 0;
-    }
-
-    .review-header {
+    .danger-box .danger-title {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 8px;
+      font-weight: 700;
+      color: var(--red);
       margin-bottom: 10px;
+      font-size: 15px;
     }
 
-    .review-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ==============================
+       QUOTE BOX (問いかけ)
+       ============================== */
+    .question-box {
+      background: var(--bg-warn);
+      border: 1px solid #fde68a;
+      border-radius: 10px;
+      padding: 24px 20px;
+      margin: 28px 0;
+      text-align: center;
+      font-size: 17px;
       font-weight: 700;
-      font-size: 16px;
-      color: white;
-    }
-
-    .review-meta .reviewer-name {
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .review-meta .reviewer-attr {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    .stars {
-      color: var(--star);
-      font-size: 14px;
-      margin-bottom: 8px;
-      letter-spacing: 2px;
-    }
-
-    .review-text {
-      font-size: 14px;
       line-height: 1.8;
-      color: var(--text-secondary);
+      color: var(--text-primary);
     }
 
-    /* ---- Comparison Table ---- */
-    .compare-table-wrap {
-      overflow-x: auto;
-      margin: 20px 0;
-      -webkit-overflow-scrolling: touch;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .compare-table {
-      width: 100%;
-      min-width: 480px;
-      border-collapse: collapse;
-      font-size: 13px;
-    }
-
-    .compare-table th,
-    .compare-table td {
-      padding: 12px 10px;
-      border: 1px solid var(--border);
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    .compare-table thead th {
-      background: var(--bg-main);
-      font-weight: 700;
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    .compare-table .recommended {
-      background: var(--accent-soft);
-    }
-
-    .compare-table .recommended-header {
-      background: var(--accent);
-      color: #fff;
-      font-weight: 700;
-      font-size: 13px;
-    }
-
-    .compare-table .circle {
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .compare-table .triangle {
-      color: var(--star);
-      font-weight: 700;
-    }
-
-    .compare-table .cross {
-      color: var(--text-muted);
-    }
-
-    /* ---- Offer Box ---- */
-    .offer-box {
-      background: linear-gradient(135deg, #e6f7f0 0%, #f0fdf4 50%, #e6f7f0 100%);
-      border: 2px solid var(--accent);
-      border-radius: 16px;
+    /* ==============================
+       AUTHORITY SECTION (権威性)
+       ============================== */
+    .authority-banner {
+      background: linear-gradient(135deg, #0f172a, #1e3a5f);
+      border-radius: 12px;
       padding: 28px 20px;
-      margin: 36px 0;
+      margin: 28px 0;
       text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .offer-box::before {
-      content: "";
-      position: absolute;
-      top: -30px;
-      right: -30px;
-      width: 80px;
-      height: 80px;
-      background: var(--accent);
-      opacity: 0.08;
-      border-radius: 50%;
-    }
-
-    .offer-box .campaign-badge {
-      display: inline-block;
-      background: var(--accent);
       color: #fff;
-      font-size: 12px;
+    }
+
+    .authority-banner .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #1a1a1a;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 14px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .authority-banner .big-number {
+      font-family: "Noto Serif JP", serif;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1;
+      margin: 8px 0;
+      background: linear-gradient(135deg, #fbbf24, #f9fafb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .authority-banner .desc {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .authority-banner .source {
+      font-size: 10px;
+      opacity: 0.5;
+      margin-top: 12px;
+    }
+
+    /* ==============================
+       BENEFIT CARDS (即時報酬セクション)
+       ============================== */
+    .benefit-section {
+      background: var(--bg-success);
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 24px 18px;
+      margin: 28px 0;
+    }
+
+    .benefit-section .section-label {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 11px;
       font-weight: 700;
-      padding: 5px 20px;
-      border-radius: 20px;
+      padding: 3px 12px;
+      border-radius: 4px;
       margin-bottom: 14px;
     }
 
-    .offer-box .product-name {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 4px;
+    .benefit-item {
+      display: flex;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px dashed #bbf7d0;
     }
 
-    .offer-box .price-area {
+    .benefit-item:last-child {
+      border-bottom: none;
+    }
+
+    .benefit-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .benefit-text {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .benefit-text strong {
+      color: var(--green-dark);
+    }
+
+    /* ==============================
+       REFRAME BOX (フレーミング効果)
+       ============================== */
+    .reframe-box {
+      background: var(--bg-blue);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 24px 18px;
+      margin: 28px 0;
+    }
+
+    .reframe-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
       margin: 16px 0;
     }
 
-    .offer-box .original-price {
-      font-size: 15px;
-      color: var(--text-muted);
-      text-decoration: line-through;
+    .reframe-item {
+      text-align: center;
+      padding: 16px 8px;
+      border-radius: 8px;
     }
 
-    .offer-box .sale-price {
-      font-size: 42px;
+    .reframe-item.before {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px dashed #fecdd3;
+    }
+
+    .reframe-item.after {
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid #bbf7d0;
+    }
+
+    .reframe-item .rf-label {
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .reframe-item.before .rf-label {
+      color: var(--red);
+    }
+
+    .reframe-item.after .rf-label {
+      color: var(--green);
+    }
+
+    .reframe-item .rf-price {
+      font-size: 24px;
       font-weight: 900;
-      color: var(--accent);
-      display: block;
       line-height: 1.2;
     }
 
-    .offer-box .sale-price .unit {
-      font-size: 16px;
-    }
-
-    .offer-box .sale-note {
+    .reframe-item .rf-note {
       font-size: 12px;
       color: var(--text-muted);
       margin-top: 4px;
     }
 
-    .offer-box .benefits {
-      text-align: left;
-      margin: 20px auto;
-      max-width: 300px;
-      font-size: 14px;
+    /* ==============================
+       SOCIAL PROOF (バンドワゴン)
+       ============================== */
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 20px 0;
     }
 
-    .offer-box .benefits li {
-      list-style: none;
-      padding: 5px 0 5px 24px;
-      position: relative;
+    .proof-card {
+      text-align: center;
+      padding: 16px 8px;
+      background: var(--bg-page);
+      border-radius: 8px;
     }
 
-    .offer-box .benefits li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: var(--accent);
+    .proof-card .proof-num {
+      font-family: "Noto Serif JP", serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .proof-card .proof-unit {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ==============================
+       CTA
+       ============================== */
+    .cta-section {
+      text-align: center;
+      margin: 36px 0;
+      padding: 28px 0;
+    }
+
+    .cta-lead {
+      font-size: 15px;
       font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
     }
 
-    /* ---- CTA Button ---- */
+    .cta-sublead {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
     .cta-button {
       display: block;
       width: 100%;
-      max-width: 400px;
-      margin: 24px auto;
-      padding: 18px 24px;
-      background: linear-gradient(135deg, var(--accent), #00c07f);
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
       color: #fff;
       text-align: center;
       text-decoration: none;
       font-size: 17px;
       font-weight: 800;
       border-radius: 60px;
-      box-shadow: 0 4px 20px rgba(0, 168, 107, 0.35);
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(22, 163, 74, 0.35);
+      transition: all 0.3s;
+      line-height: 1.4;
     }
 
     .cta-button:hover {
-      background: linear-gradient(135deg, var(--accent-hover), #00a86b);
-      box-shadow: 0 6px 24px rgba(0, 168, 107, 0.45);
       transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(22, 163, 74, 0.45);
     }
 
-    .cta-button::after {
-      content: "▶";
-      margin-left: 8px;
-      font-size: 12px;
+    .cta-button .cta-main-text {
+      display: block;
     }
 
-    .cta-button .cta-small {
+    .cta-button .cta-sub-text {
       display: block;
       font-size: 12px;
       font-weight: 500;
@@ -593,132 +559,86 @@
       margin-top: 4px;
     }
 
-    .cta-sub {
-      display: block;
-      text-align: center;
+    .cta-note {
       font-size: 12px;
       color: var(--text-muted);
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
-    /* ---- Pulse Animation ---- */
     @keyframes pulse {
-      0% {
-        box-shadow: 0 4px 20px rgba(0, 168, 107, 0.35);
+
+      0%,
+      100% {
+        box-shadow: 0 4px 20px rgba(22, 163, 74, 0.35);
       }
 
       50% {
-        box-shadow: 0 4px 28px rgba(0, 168, 107, 0.55);
-      }
-
-      100% {
-        box-shadow: 0 4px 20px rgba(0, 168, 107, 0.35);
+        box-shadow: 0 4px 32px rgba(22, 163, 74, 0.55);
       }
     }
 
     .cta-button.pulse {
-      animation: pulse 2s ease-in-out infinite;
+      animation: pulse 2.5s ease-in-out infinite;
     }
 
-    /* ---- PS Section ---- */
-    .ps-section {
-      background: var(--bg-highlight);
-      border-radius: var(--radius);
-      padding: 20px;
+    /* ==============================
+       FINAL NUDGE (最後のナッジ)
+       ============================== */
+    .nudge-box {
+      background: #fefce8;
+      border: 2px solid #fde68a;
+      border-radius: 12px;
+      padding: 24px 18px;
       margin: 32px 0;
-      font-size: 14px;
-      border-left: 4px solid var(--brand-teal);
     }
 
-    .ps-section .ps-label {
-      font-weight: 700;
-      color: var(--brand-teal);
-      margin-bottom: 8px;
-      font-size: 15px;
-    }
-
-    /* ---- Cost Calc ---- */
-    .cost-calc {
-      background: var(--bg-main);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin: 20px 0;
-      border: 1px solid var(--border);
-    }
-
-    .cost-calc .calc-title {
-      font-weight: 700;
-      font-size: 15px;
+    .nudge-box .nudge-title {
+      font-family: "Noto Serif JP", serif;
+      font-weight: 900;
+      font-size: 17px;
       margin-bottom: 12px;
-      text-align: center;
+      color: var(--text-primary);
     }
 
-    .cost-calc .calc-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      font-size: 14px;
-      border-bottom: 1px dashed var(--border);
+    .nudge-steps {
+      list-style: none;
+      counter-reset: step;
     }
 
-    .cost-calc .calc-row:last-child {
-      border-bottom: none;
+    .nudge-steps li {
+      counter-increment: step;
+      padding: 8px 0 8px 36px;
+      position: relative;
+      font-size: 15px;
     }
 
-    .cost-calc .calc-row.total {
-      font-weight: 700;
-      font-size: 16px;
-      color: var(--accent);
-      border-top: 2px solid var(--accent);
-      margin-top: 8px;
-      padding-top: 12px;
-    }
-
-    /* ---- FAQ ---- */
-    .faq-item {
-      margin: 16px 0;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-
-    .faq-q {
-      padding: 14px 16px;
-      font-weight: 700;
-      font-size: 14px;
-      background: var(--bg-main);
-      display: flex;
-      gap: 8px;
-    }
-
-    .faq-q .q-icon {
-      color: var(--accent);
+    .nudge-steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 24px;
+      height: 24px;
+      background: var(--amber);
+      color: #fff;
+      font-size: 13px;
       font-weight: 900;
-      flex-shrink: 0;
-    }
-
-    .faq-a {
-      padding: 14px 16px;
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.8;
+      border-radius: 50%;
       display: flex;
-      gap: 8px;
+      align-items: center;
+      justify-content: center;
     }
 
-    .faq-a .a-icon {
-      color: var(--orange);
-      font-weight: 900;
-      flex-shrink: 0;
-    }
-
-    /* ---- Footer ---- */
+    /* ==============================
+       FOOTER
+       ============================== */
     .site-footer {
-      padding: 24px 20px;
+      padding: 28px 22px;
       text-align: center;
       font-size: 11px;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
+      line-height: 1.8;
     }
 
     .site-footer a {
@@ -726,7 +646,9 @@
       text-decoration: underline;
     }
 
-    /* ---- Sticky CTA ---- */
+    /* ==============================
+       STICKY CTA
+       ============================== */
     .sticky-cta {
       position: fixed;
       bottom: 0;
@@ -742,27 +664,28 @@
     }
 
     .sticky-cta .cta-button {
-      margin: 0 auto;
       padding: 14px 20px;
       font-size: 15px;
+      margin: 0 auto;
     }
 
     /* ---- Responsive ---- */
     @media (max-width: 640px) {
-      .article-inner {
-        padding: 20px 16px;
+      .hero h1 {
+        font-size: 21px;
       }
 
-      .article-title {
-        font-size: 20px;
+      .hero {
+        padding: 32px 18px 28px;
       }
 
-      h2 {
-        font-size: 17px;
+      .article-body {
+        padding: 24px 18px 36px;
       }
 
-      h3 {
-        font-size: 16px;
+      .article-body h2 {
+        font-size: 18px;
+        margin-top: 40px;
       }
 
       body {
@@ -774,11 +697,28 @@
       }
 
       .article {
-        padding-bottom: 80px;
+        padding-bottom: 72px;
       }
 
-      .offer-box .sale-price {
+      .authority-banner .big-number {
         font-size: 36px;
+      }
+
+      .visual-compare {
+        grid-template-columns: 1fr 20px 1fr;
+      }
+
+      .reframe-compare {
+        grid-template-columns: 1fr;
+      }
+
+      .proof-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+      }
+
+      .proof-card .proof-num {
+        font-size: 18px;
       }
     }
   </style>
@@ -786,527 +726,330 @@
 
 <body>
 
-  <!-- 広告表記（ステマ規制対応 必須） -->
-  <div class="pr-label">※本記事にはアフィリエイトリンクが含まれます</div>
-
-  <!-- ヘッダー -->
-  <header class="site-header">
-    <div class="logo">Men's Hair Lab</div>
-    <div class="category">メンズヘアケア・頭皮ケア情報</div>
-  </header>
+  <!-- 広告開示 -->
+  <div class="disclosure">※本記事にはアフィリエイトリンクが含まれます</div>
 
   <main class="article">
-    <div class="article-inner">
 
-      <!-- 記事メタ情報 -->
-      <div class="article-meta">
-        <span class="date">2026.02.14</span>
-        <span class="tag">体験レポート</span>
-      </div>
-
-      <!-- ============================================
-           セクション1: ファーストビュー
-           ============================================ -->
-      <h1 class="article-title">
-        <span class="highlight">「なんか老けた？」</span>と言われた32歳が<br>
-        シャンプーを変えただけで印象が変わった話
+    <!-- ====================================================
+         SECTION 1: HERO — 認知的不協和の創出
+         「育毛剤は無駄」という矛盾を突きつけ、読み進めさせる
+         ==================================================== -->
+    <section class="hero">
+      <span class="hero-tag">⚠ 頭皮ケアの新常識</span>
+      <h1>
+        まだ<span class="red">「育毛剤」</span>に頼ってるの？<br>
+        泥だらけの畑に肥料を撒くのは、<br>
+        もうやめましょう。
       </h1>
+      <p class="hero-sub">
+        毎月数千円の育毛トニック。<br>
+        実は、あなたのシャンプーがその成分を<br>
+        <strong style="color:#fca5a5;">全部弾いている</strong>としたら？
+      </p>
 
-      <!-- ヒーロー画像 -->
-      <div class="hero-image-wrap">
-        <div class="hero-image">
-          <div class="hero-image-text">
-            <div class="brand">SCALP D NEXT+</div>
-            <div class="sub">ふんわり、まとまる。自分らしい抜け感ヘア。</div>
-          </div>
+      <!-- 毛穴ビジュアル比較 -->
+      <div class="visual-compare">
+        <div class="visual-box bad">
+          <div class="icon">🚫</div>
+          <div class="label">皮脂で詰まった毛穴<br><small style="opacity:0.6">市販シャンプー</small></div>
         </div>
-        <div class="hero-badge">半年使用レビュー</div>
-      </div>
-
-      <!-- ライター情報 -->
-      <div class="author-box">
-        <div class="author-avatar">K.S</div>
-        <div class="author-info">
-          <div class="name">K.S（32歳・営業職）</div>
-          <div class="desc">入社10年目。最近「疲れてる？」と聞かれることが増え、<br>ヘアケアを見直すことに。</div>
+        <div class="visual-arrow">→</div>
+        <div class="visual-box good">
+          <div class="icon">✨</div>
+          <div class="label">すっきり清潔な毛穴<br><small style="opacity:0.6">スカルプD NEXT+</small></div>
         </div>
       </div>
+    </section>
 
-      <!-- ============================================
-           セクション2: 問題提起
-           ============================================ -->
+    <!-- Meta -->
+    <div class="meta-bar">
+      <span>2026.02.16 公開</span>
+      <span class="reading-time">📖 読了 約3分</span>
+    </div>
+
+    <div class="article-body">
+
+      <!-- ====================================================
+           SECTION 2: 問題提起 — サンクコスト × 損失回避
+           「今まで費やしたお金が無駄だった」と気づかせる
+           ==================================================== -->
+      <h2>あなたの育毛剤は、<br>1ミリも浸透していないかもしれない</h2>
+
       <p>
-        こんにちは、都内でメーカー営業をしているK.Sです。
+        毎月5,000円の育毛トニック。毎晩お風呂上がりに頭皮にすり込む、あの時間。
       </p>
       <p>
-        突然ですが、32歳になって気づいたことがあります。<br>
-        <span class="underline-em">髪の印象って、見た目年齢の8割を決めている</span>ということ。
+        あなたが<span class="marker-red">この1年で育毛ケアに費やした金額</span>は、いくらですか？
       </p>
       <p>
-        きっかけは、久しぶりに会った大学時代の後輩に言われた一言でした。
-      </p>
-      <p
-        style="background: var(--bg-concern); padding: 16px; border-radius: 8px; font-size: 15px; text-align: center; border: 1px solid #ffe0e0;">
-        「先輩、なんか…<span class="red-em">老けました？</span>」
-      </p>
-      <p>
-        正直、ショックでした。<br>
-        確かに最近、こんなことが増えていたんです。
+        トニック代、サプリ代、頭皮マッサージ器…<br>
+        合計すると<span class="red-text">年間6万円以上</span>になっている人も珍しくありません。
       </p>
 
-      <div class="concern-list">
-        <p class="lead">こんな悩み、ありませんか？</p>
-        <ul>
-          <li>朝セットしても、午後にはペタンコになる</li>
-          <li>前髪が割れて、おでこが目立つようになった</li>
-          <li>頭皮がベタつく日と、カサカサの日がある</li>
-          <li>シャンプー後の排水溝を見るのが怖い</li>
-          <li>同年代と比べて、なんか老けて見える気がする</li>
-        </ul>
+      <div class="question-box">
+        もし、そのお金が<br>
+        <span style="color: var(--red); font-size: 20px;">全部ムダになっていた</span><br>
+        としたら、どうしますか？
       </div>
 
       <p>
-        <span class="underline-em">実はこれ、全部半年前の僕のこと</span>です。
+        もちろん、育毛剤の成分自体が悪いわけではありません。<br>
+        問題は<span class="marker">「その前段階」</span>にあります。
       </p>
 
-
-      <!-- ============================================
-           セクション3: 原因の説明
-           ============================================ -->
-      <h2>「老け見え」の原因は、髪のボリュームだった</h2>
+      <h3>市販シャンプーが作る「脂のバリア」</h3>
 
       <p>
-        気になって調べてみると、衝撃の事実がわかりました。
+        多くの市販シャンプーは、洗浄力が強すぎます。
       </p>
       <p>
-        人の印象を左右する最大の要因は、肌でもファッションでもなく、<span class="emphasis">「髪のボリューム感」</span>だというのです。
+        強い洗浄剤が頭皮の必要な油分まで奪ってしまうと、頭皮は自分を守ろうとして<span class="bold">過剰な皮脂を分泌</span>します。
       </p>
       <p>
-        考えてみれば、同い年なのにやたら若く見える同僚は、いつも髪がふんわりしていました。
-      </p>
-      <p>
-        では、なぜ髪のボリュームが失われるのか？
-      </p>
-      <p>
-        調べるうちにわかったのは、<span
-          class="underline-em">30代を過ぎると頭皮環境が大きく変化する</span>ということ。皮脂バランスが崩れ、毛穴に汚れが溜まりやすくなり、髪が根元から立ち上がらなくなるのだそうです。
-      </p>
-      <p>
-        つまり、<span class="emphasis">ワックスやスプレーでごまかすのではなく、まず「土台=頭皮」を整えることが先決</span>だったんです。
-      </p>
-      <p>
-        でも、じゃあ何を使えばいいのか？ドラッグストアのシャンプーで十分なのか？
+        この皮脂が毛穴に蓄積し、<span class="marker-red">「脂のバリア」</span>となって、後から塗る育毛剤をブロックしているのです。
       </p>
 
-
-      <!-- ============================================
-           セクション4: 解決策の提示
-           ============================================ -->
-      <h2>そんな時に出会ったのが「スカルプD NEXT+」</h2>
-
-      <p>
-        ヘアケアに詳しい美容師の友人に相談したところ、教えてくれたのが<span class="emphasis">スカルプD NEXT+（ネクストプラス）</span>でした。
-      </p>
-      <p>
-        「スカルプD」の名前は知っていましたが、<span class="underline-em">実は2025年にフルリニューアルしてNEXT+として生まれ変わった</span>とのこと。
-      </p>
-      <p>
-        正直、「シャンプーを変えるだけで何か変わるの？」と半信半疑でしたが、美容師の友人が実際に使っていて髪の調子が良さそうだったので、ものは試しと使ってみることにしました。
-      </p>
-
-
-      <!-- ============================================
-           セクション5: 商品の特長
-           ============================================ -->
-      <h2>スカルプD NEXT+ 3つの特長</h2>
-
-      <div class="feature-card">
-        <span class="feature-num">1</span>
-        <span class="feature-title">頭皮ケアの先駆者、アンファーが本気で作った</span>
-        <p class="feature-desc">
-          スカルプDシリーズは<strong>頭皮ケアシャンプー売上12年連続No.1</strong>※。<br>
-          そのアンファーが「次世代の髪悩み」に対応するために開発したのがNEXT+。従来品から処方を一新し、ヘアスタイリングまで考慮した設計になっています。<br>
-          <small>※富士経済「化粧品マーケティング要覧」ヘアスカルプケアシャンプー 企業シェア 出荷金額ベース</small>
+      <div class="danger-box">
+        <div class="danger-title">⚠️ つまり、こういうことです</div>
+        <p style="font-size: 15px; margin: 0; line-height: 1.9;">
+          市販のシャンプーで洗う → 頭皮が過剰に皮脂を出す → 毛穴が皮脂で詰まる → 育毛剤が浸透しない → <span class="red-text">お金と時間がムダになる</span>
         </p>
       </div>
 
-      <div class="feature-card">
-        <span class="feature-num">2</span>
-        <span class="feature-title">ノンシリコンなのに、指通りなめらか</span>
-        <p class="feature-desc">
-          「ノンシリコン＝キシキシする」というイメージ、ありませんか？<br>
-          NEXT+は独自の処方で、ノンシリコンでありながら<strong>なめらかな指通りを実現</strong>。洗い上がりのきしみ感がなく、ドライヤー後もサラサラに仕上がります。
+      <p class="large-text">
+        畑に例えるなら、<br>
+        <span class="red-text">泥だらけの土壌に<br>いくら高い肥料を撒いても<br>作物は育たない。</span>
+      </p>
+
+      <p>
+        <span class="marker">まず「土壌（頭皮）」を整えること。</span><br>
+        それが、全てのヘアケアの出発点なのです。
+      </p>
+
+
+      <!-- ====================================================
+           SECTION 3: 解決策 — 権威性 × バンドワゴン効果
+           スカルプDのブランド力で信頼の壁を一撃突破
+           ==================================================== -->
+      <h2>そこで、頭皮研究の専門家が出した答え</h2>
+
+      <p>
+        医学的見地から頭皮を研究し尽くした<span class="bold">予防医学のアンファー</span>。
+      </p>
+      <p>
+        その技術の結晶が、<span class="marker">スカルプD NEXT+</span>です。
+      </p>
+
+      <!-- 権威性バナー -->
+      <div class="authority-banner">
+        <span class="badge">👑 実績 DATA</span>
+        <div class="big-number">12年連続 No.1</div>
+        <p class="desc">
+          頭皮ケアシャンプー売上<br>
+          <strong>12年連続</strong> 企業シェア第1位
         </p>
+        <p class="source">出典：富士経済「化粧品マーケティング要覧」ヘアスカルプケアシャンプー 企業シェア 出荷金額ベース</p>
       </div>
 
-      <div class="feature-card">
-        <span class="feature-num">3</span>
-        <span class="feature-title">1本で約4ヶ月持つ → 1日たった約30円</span>
-        <p class="feature-desc">
-          「スカルプシャンプーは高い」と思っている方も多いですが、NEXT+は1本で約4ヶ月使えます。<br>
-          つまり<strong>1日あたり約30円</strong>。缶コーヒー1本より安い価格で、毎日のヘアケアをアップグレードできます。
-        </p>
+      <h3>なぜ「スカルプD」なのか？</h3>
+
+      <p>
+        ドラッグストアに並ぶ「なんとなく効きそうなシャンプー」とは、開発思想が根本的に違います。
+      </p>
+      <p>
+        アンファーは元々<span class="bold">クリニック向けの頭皮治療研究</span>から始まった会社。つまり、スカルプDは<span
+          class="marker">「お医者さんが作ったシャンプー」</span>の系譜を持っているのです。
+      </p>
+
+      <!-- バンドワゴン：社会的証明 -->
+      <div class="proof-grid">
+        <div class="proof-card">
+          <div class="proof-num">累計<br>2,000万</div>
+          <div class="proof-unit">本以上の販売実績</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-num">No.1</div>
+          <div class="proof-unit">12年連続<br>売上シェア</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-num">4ヶ月</div>
+          <div class="proof-unit">分持つ<br>コスパ設計</div>
+        </div>
       </div>
 
-      <!-- コスト比較 -->
-      <div class="cost-calc">
-        <div class="calc-title">💰 1日あたりのコスト比較</div>
-        <div class="calc-row">
-          <span>ドラッグストアのシャンプー</span>
-          <span>約10円/日</span>
-        </div>
-        <div class="calc-row">
-          <span>スカルプD NEXT+</span>
-          <span>約30円/日</span>
-        </div>
-        <div class="calc-row">
-          <span>美容室専売シャンプー</span>
-          <span>約80〜150円/日</span>
-        </div>
-        <div class="calc-row total">
-          <span>差額</span>
-          <span>+20円/日で頭皮ケア</span>
-        </div>
-      </div>
+      <p style="font-size: 13px; color: var(--text-muted); text-align: center;">
+        ※販売本数はシリーズ累計（アンファー調べ）
+      </p>
+
 
       <!-- 中間CTA -->
-      <a href="https://scalp-d.angfa-store.jp/ad/next_plus/dry_02/" class="cta-button" id="cta-mid"
-        rel="nofollow sponsored">
-        スカルプD NEXT+ を詳しく見る
-      </a>
-      <span class="cta-sub">※アンファー公式サイトに移動します</span>
-
-
-      <!-- ============================================
-           セクション6: 使用体験
-           ============================================ -->
-      <h2>実際に半年使ってみた正直な感想</h2>
-
-      <h3>1ヶ月目：使用感の良さに驚いた</h3>
-      <p>
-        最初に感じたのは、<span class="emphasis">泡立ちの良さと洗い上がりのスッキリ感</span>。ノンシリコンなのにキシまず、ドライヤー後に髪がふんわり立ち上がる感覚がありました。
-      </p>
-      <p>
-        ただ正直、見た目の変化はまだわかりませんでした。
-      </p>
-
-      <h3>3ヶ月目：セットが楽になった</h3>
-      <p>
-        使い続けて3ヶ月ほど経った頃、ある変化に気づきました。<br>
-        <span class="underline-em">朝のヘアセットにかかる時間が明らかに短くなっていた</span>んです。
-      </p>
-      <p>
-        以前は整髪剤をべったりつけないと前髪が割れていたのが、ドライヤーだけである程度まとまるように。これは嬉しい変化でした。
-      </p>
-
-      <h3>半年後：「若返った？」と言われた</h3>
-      <p>
-        半年経つ頃には、頭皮のベタつきがかなり落ち着いていました。以前は夕方にはギトギトだったのが、今は19時の打ち合わせでも気にならないレベルに。
-      </p>
-      <p>
-        そして何より嬉しかったのが、例の後輩に再会した時の一言。
-      </p>
-      <p
-        style="background: var(--accent-soft); padding: 16px; border-radius: 8px; font-size: 15px; text-align: center; border: 1px solid #b2dfdb;">
-        「先輩、<span class="emphasis">なんか若返りました？</span>髪型変えました？」
-      </p>
-      <p>
-        髪型は変えていません。変えたのはシャンプーだけ。<br>
-        でも<span class="underline-em">髪のボリュームが戻ったことで、見た目の印象が大きく変わった</span>のだと思います。
-      </p>
-
-      <p style="font-size: 12px; color: #999; text-align: center;">※個人の感想であり、効果・効能を保証するものではありません</p>
-
-
-      <!-- ============================================
-           セクション7: 口コミ
-           ============================================ -->
-      <h2>僕だけじゃない。使った人の声</h2>
-
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">T.M</div>
-          <div class="review-meta">
-            <div class="reviewer-name">T.Mさん</div>
-            <div class="reviewer-attr">28歳・IT企業勤務</div>
-          </div>
-        </div>
-        <div class="stars">★★★★★</div>
-        <p class="review-text">
-          センターパートのスタイリングが格段に楽になりました。以前はアイロンで必死に立ち上げてましたが、NEXT+に変えてからはドライヤーだけでOK。コスパも悪くないので続けやすいです。
-        </p>
+      <div class="cta-section">
+        <p class="cta-lead">「土壌」を整える第一歩</p>
+        <p class="cta-sublead">まずは公式サイトで詳細を確認</p>
+        <a href="#" class="cta-button" id="cta-mid" rel="nofollow sponsored">
+          <span class="cta-main-text">スカルプD NEXT+ 詳細を見る ▶</span>
+          <span class="cta-sub-text">アンファー公式サイトへ移動します</span>
+        </a>
+        <p class="cta-note">※定期縛りなし・いつでも解約OK</p>
       </div>
 
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">Y.K</div>
-          <div class="review-meta">
-            <div class="reviewer-name">Y.Kさん</div>
-            <div class="reviewer-attr">35歳・自営業</div>
+
+      <!-- ====================================================
+           SECTION 4: ベネフィット — 双曲割引（現在志向バイアス）
+           「遠い将来の予防」ではなく「明日の変化」を売る
+           ==================================================== -->
+      <h2>「将来の予防」だけじゃない。<br>洗った<span style="color: var(--green);">翌朝</span>から、髪が変わる。</h2>
+
+      <p>
+        ここが、育毛剤とスカルプD NEXT+の<span class="bold">決定的な違い</span>です。
+      </p>
+      <p>
+        育毛剤は「数ヶ月後の結果」を待つしかない。<br>
+        でもNEXT+は<span class="marker">「明日の朝」から違いを感じられる</span>シャンプーです。
+      </p>
+
+      <div class="benefit-section">
+        <span class="section-label">翌朝から変わる3つのこと</span>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">💇</div>
+          <div class="benefit-text">
+            <strong>髪の根元が立ち上がる</strong><br>
+            ペタンコだった前髪が、ドライヤーだけでふんわり。朝のセット時間が半分になる人も。
           </div>
         </div>
-        <div class="stars">★★★★☆</div>
-        <p class="review-text">
-          正直、シャンプーで何が変わるのかと思ってましたが、3週間くらいで頭皮のベタつきが減ったのを実感。匂いも爽やかで気に入ってます。ちょっと高いけど、4ヶ月持つなら許容範囲。
-        </p>
-      </div>
 
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar" style="background: linear-gradient(135deg, #fa709a, #fee140);">R.N</div>
-          <div class="review-meta">
-            <div class="reviewer-name">R.Nさん</div>
-            <div class="reviewer-attr">41歳・管理職</div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🕐</div>
+          <div class="benefit-text">
+            <strong>夕方までヘアスタイルがキマる</strong><br>
+            午後にはペタンコ…がなくなる。19時の飲み会でも、朝のスタイルをキープ。
           </div>
         </div>
-        <div class="stars">★★★★★</div>
-        <p class="review-text">
-          40代に入って急に髪が細くなり、スカルプD関連でこちらを選びました。パックコンディショナーと併用してますが、確かにハリが出てきた気がします。妻にも「髪が元気になった」と言われました。
-        </p>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">👃</div>
+          <div class="benefit-text">
+            <strong>頭皮のベタつき・ニオイが消える</strong><br>
+            ノンシリコンの適切な洗浄力で、皮脂バランスが整う。「近づいても大丈夫」な自信。
+          </div>
+        </div>
       </div>
 
-      <p style="font-size: 12px; color: #999; text-align: center;">
+      <p>
+        つまり、NEXT+は<span class="marker">「将来のための保険」と「今日のカッコよさ」が同時に手に入る</span>、唯一のシャンプーなのです。
+      </p>
+
+      <p style="font-size: 12px; color: var(--text-muted); text-align: center;">
         ※個人の感想であり、効果・効能を保証するものではありません
       </p>
 
 
-      <!-- ============================================
-           セクション8: 比較表
-           ============================================ -->
-      <h2>他のメンズシャンプーとの違いは？</h2>
+      <!-- ====================================================
+           SECTION 5: クロージング — フレーミング × 決定回避の法則
+           「高いシャンプー」ではなく「育毛剤より安い投資」と見せる
+           ==================================================== -->
+      <h2>育毛剤に月5,000円出すより、<br>シャンプーを変える方が合理的</h2>
 
-      <div class="compare-table-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th class="recommended-header">スカルプD<br>NEXT+</th>
-              <th>B社<br>メンズシャンプー</th>
-              <th>C社<br>スカルプシャンプー</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>頭皮ケア<br>成分</td>
-              <td class="recommended circle">◎</td>
-              <td class="triangle">△</td>
-              <td class="circle">○</td>
-            </tr>
-            <tr>
-              <td>ノンシリコン</td>
-              <td class="recommended circle">◎</td>
-              <td class="cross">×</td>
-              <td class="circle">○</td>
-            </tr>
-            <tr>
-              <td>指通り</td>
-              <td class="recommended circle">◎</td>
-              <td class="circle">○</td>
-              <td class="triangle">△</td>
-            </tr>
-            <tr>
-              <td>スタイリング<br>しやすさ</td>
-              <td class="recommended circle">◎</td>
-              <td class="circle">○</td>
-              <td class="triangle">△</td>
-            </tr>
-            <tr>
-              <td>コスパ<br>（1日あたり）</td>
-              <td class="recommended"><strong>約30円</strong></td>
-              <td>約25円</td>
-              <td>約100円</td>
-            </tr>
-            <tr>
-              <td>持ち（1本）</td>
-              <td class="recommended"><strong>約4ヶ月</strong></td>
-              <td>約2ヶ月</td>
-              <td>約1.5ヶ月</td>
-            </tr>
-            <tr>
-              <td>ブランド<br>実績</td>
-              <td class="recommended"><strong>12年連続<br>No.1※</strong></td>
-              <td>—</td>
-              <td>5年</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size: 11px; color: #999;">※富士経済「化粧品マーケティング要覧」ヘアスカルプケアシャンプー 企業シェア 出荷金額ベース</p>
-
-
-      <!-- ============================================
-           セクション9: オファー
-           ============================================ -->
-      <div class="offer-box">
-        <span class="campaign-badge">公式サイト限定</span>
-        <p class="product-name">
-          スカルプD NEXT+<br>
-          シャンプー＆パックコンディショナー セット
+      <div class="reframe-box">
+        <p
+          style="font-size: 15px; font-weight: 700; text-align: center; margin-bottom: 12px; color: var(--text-primary);">
+          💡 お金の使い方、見直してみませんか？
         </p>
-        <div class="price-area">
-          <span class="original-price">通常価格 4,268円（税込）</span>
-          <span class="sale-price">
-            3,626<span class="unit">円（税込）</span>
-          </span>
-          <span class="sale-note">定期購入で15%OFF</span>
+        <div class="reframe-compare">
+          <div class="reframe-item before">
+            <div class="rf-label">❌ 今までの出費</div>
+            <div class="rf-price" style="color: var(--red);">月5,000円〜</div>
+            <div class="rf-note">育毛剤 + 市販シャンプー<br>（しかも浸透してない）</div>
+          </div>
+          <div class="reframe-item after">
+            <div class="rf-label">✅ これからの投資</div>
+            <div class="rf-price" style="color: var(--green);">月907円〜</div>
+            <div class="rf-note">スカルプD NEXT+<br>（1本4ヶ月 = 3,626円÷4）</div>
+          </div>
         </div>
-        <ul class="benefits">
-          <li>定期縛りなし（いつでも解約OK）</li>
-          <li>1本で約4ヶ月使える</li>
-          <li>1日あたり約30円</li>
-          <li>送料無料</li>
-        </ul>
-      </div>
-
-
-      <!-- ============================================
-           セクション10: メインCTA
-           ============================================ -->
-      <a href="https://scalp-d.angfa-store.jp/ad/next_plus/dry_02/" class="cta-button pulse" id="cta-main"
-        rel="nofollow sponsored">
-        公式サイトで詳細を見る
-        <span class="cta-small">▼ アンファー公式ストア ▼</span>
-      </a>
-      <span class="cta-sub">※定期縛りなし・いつでも解約OK</span>
-
-
-      <!-- ============================================
-           セクション11: FAQ
-           ============================================ -->
-      <h2>よくある質問</h2>
-
-      <div class="faq-item">
-        <div class="faq-q">
-          <span class="q-icon">Q.</span>
-          <span>ドライとオイリー、どっちを選べばいいですか？</span>
-        </div>
-        <div class="faq-a">
-          <span class="a-icon">A.</span>
-          <span>ふんわり感・まとまりが欲しい方、ダメージケアや保湿を重視したい方は<strong>ドライ</strong>がおすすめ。立体感・洗い上がりのスッキリ感が欲しい方は<strong>オイリー</strong>をお試しください。</span>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q">
-          <span class="q-icon">Q.</span>
-          <span>パックコンディショナーは必要ですか？</span>
-        </div>
-        <div class="faq-a">
-          <span class="a-icon">A.</span>
-          <span>シャンプー単体でも使えますが、より効果を実感したい方はセット使いがおすすめです。髪と地肌の両方をケアし、根元からふんわり立ち上げてくれます。</span>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q">
-          <span class="q-icon">Q.</span>
-          <span>定期購入の解約は簡単にできますか？</span>
-        </div>
-        <div class="faq-a">
-          <span class="a-icon">A.</span>
-          <span>はい、回数の縛りはなく、いつでも解約可能です。マイページまたはお電話で手続きいただけます。</span>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q">
-          <span class="q-icon">Q.</span>
-          <span>1本でどのくらい持ちますか？</span>
-        </div>
-        <div class="faq-a">
-          <span class="a-icon">A.</span>
-          <span>1日1回の使用で約4ヶ月持ちます。コスパは市販シャンプーと大きく変わりません。</span>
-        </div>
-      </div>
-
-
-      <!-- ============================================
-           セクション12: 追伸
-           ============================================ -->
-      <div class="ps-section">
-        <p class="ps-label">【追伸】</p>
-        <p>
-          最後まで読んでいただき、ありがとうございます。
-        </p>
-        <p>
-          正直、半年前までシャンプーにこだわりなんてありませんでした。ドラッグストアの安いやつで十分だと。
-        </p>
-        <p>
-          でも実際に変えてみて思ったのは、<span class="emphasis">「毎日使うものだからこそ、ちょっとした差が積み重なって大きな違いになる」</span>ということ。
-        </p>
-        <p>
-          1日あたりたった30円の差で、朝のセットが楽になり、夕方の頭皮のベタつきが減り、何より<strong>見た目の印象が変わった</strong>。<br>
-          この投資対効果は、正直なところ、かなり良かったです。
-        </p>
-        <p>
-          気になった方は、まずは公式サイトをチェックしてみてください。
+        <p style="font-size: 14px; text-align: center; margin: 0;">
+          <span class="green-text">毎月4,000円以上も浮く</span>のに、<br>ヘアケアの質は<span class="bold">上がる</span>。
         </p>
       </div>
 
-      <!-- ラストCTA -->
-      <a href="https://scalp-d.angfa-store.jp/ad/next_plus/dry_02/" class="cta-button pulse" id="cta-last"
-        rel="nofollow sponsored">
-        スカルプD NEXT+ 公式サイトへ
-        <span class="cta-small">定期15%OFF 3,626円（税込）</span>
-      </a>
-      <span class="cta-sub">※定期縛りなし ／ 送料無料</span>
+      <p>
+        もう一度言います。
+      </p>
+      <p>
+        あなたがやることは、<span class="marker">「毎日使っているシャンプーを変える」、ただそれだけ</span>です。
+      </p>
+      <p>
+        新しい習慣を足す必要はありません。<br>
+        今の習慣の中身を入れ替えるだけ。<br>
+        これが<span class="bold">最も続けやすいヘアケア</span>です。
+      </p>
 
-    </div><!-- /.article-inner -->
 
-    <!-- フッター -->
+      <!-- 最小ステップ：ナッジ -->
+      <div class="nudge-box">
+        <div class="nudge-title">📋 やることはたった3ステップ</div>
+        <ol class="nudge-steps">
+          <li>公式サイトでNEXT+を注文する</li>
+          <li>届いたら、今のシャンプーと入れ替える</li>
+          <li>いつも通り髪を洗う。以上。</li>
+        </ol>
+      </div>
+
+      <p class="large-text">
+        それだけで、<br>
+        <span class="green-text">明日の朝の髪が変わる。</span>
+      </p>
+
+
+      <!-- 損失回避の最後の一押し -->
+      <div class="danger-box">
+        <div class="danger-title">⚠️ 最後に、一つだけ聞いてください</div>
+        <p style="font-size: 15px; margin: 0; line-height: 1.9;">
+          5年後、鏡を見た時に<span class="red-text">「あの時シャンプーを変えておけば…」</span>と後悔する自分を想像してみてください。<br><br>
+          その後悔を消すために必要なのは、高額な育毛剤でも、植毛クリニックでもありません。<br><br>
+          <span class="marker">今日、シャンプーを1本変えるだけです。</span>
+        </p>
+      </div>
+
+
+      <!-- ====================================================
+           MAIN CTA
+           ==================================================== -->
+      <div class="cta-section">
+        <p class="cta-lead">まずは「土壌」を整えることから</p>
+        <a href="#" class="cta-button pulse" id="cta-main" rel="nofollow sponsored">
+          <span class="cta-main-text">スカルプD NEXT+ を公式で見る ▶</span>
+          <span class="cta-sub-text">定期15% OFF 3,626円（税込）／ 縛りなし</span>
+        </a>
+        <p class="cta-note">※定期縛りなし・いつでも解約OK ／ 送料無料</p>
+      </div>
+
+    </div><!-- /.article-body -->
+
+    <!-- Footer -->
     <footer class="site-footer">
       <p>
-        運営者：Men's Hair Lab ／
-        <a href="#">特定商取引法に基づく表記</a> ／
+        運営：Men's Hair Lab ／
         <a href="#">プライバシーポリシー</a>
       </p>
-      <p style="margin-top: 4px;">
-        ※当サイトはアフィリエイトプログラムに参加しています
-      </p>
-      <p style="margin-top: 4px;">
-        © 2026 Men's Hair Lab
-      </p>
+      <p>※当サイトはアフィリエイトプログラムに参加しています</p>
+      <p>© 2026 Men's Hair Lab</p>
     </footer>
   </main>
 
-  <!-- Sticky CTA（モバイル用固定ボタン） -->
+  <!-- Sticky CTA -->
   <div class="sticky-cta" id="stickyCta">
-    <a href="https://scalp-d.angfa-store.jp/ad/next_plus/dry_02/" class="cta-button" rel="nofollow sponsored">
-      公式サイトで詳細を見る ▶
+    <a href="#" class="cta-button" rel="nofollow sponsored">
+      <span class="cta-main-text">公式サイトで詳細を見る ▶</span>
     </a>
   </div>
 
   <script>
-    // Sticky CTA: 300px以上スクロールで表示
     const stickyCta = document.getElementById('stickyCta');
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        stickyCta.style.display = 'block';
-      } else {
-        stickyCta.style.display = 'none';
-      }
-    });
-
-    // CTAクリック計測
-    document.querySelectorAll('.cta-button').forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        // Google Analytics等の計測コードをここに追加
-        console.log(`CTA clicked: position ${index + 1}`);
-
-        // UTMパラメータ付きでリダイレクト（実際のアフィリエイトリンクに差し替え）
-        // window.location.href = 'アフィリエイトリンクURL';
-      });
-    });
-
-    // スムーズスクロール
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
+      stickyCta.style.display = window.scrollY > 400 ? 'block' : 'none';
     });
   </script>
 
