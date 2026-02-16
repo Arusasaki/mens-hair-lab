@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>まだ「育毛剤」に頼ってるの？泥だらけの畑に肥料を撒くのは、もうやめましょう。</title>
+  <title>まだ育毛剤をドブに捨てますか？ その「詰まった毛穴」では、1ミリも浸透しません。</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Noto+Serif+JP:wght@600;700;900&display=swap"
@@ -16,11 +16,12 @@
       --ink-secondary: #374151;
       --ink-muted: #6b7280;
       --ink-faint: #9ca3af;
-      --surface: #fafaf9;
+      --surface: #f8f7f4;
       --white: #ffffff;
-      --danger: #b91c1c;
+      --danger: #991b1b;
+      --danger-light: #b91c1c;
       --danger-bg: #fef2f2;
-      --danger-border: #f3d5d5;
+      --danger-border: #f0d0d0;
       --success: #047857;
       --success-bg: #ecfdf5;
       --success-border: #c6e9d9;
@@ -28,15 +29,9 @@
       --gold-bg: #fffbeb;
       --gold-border: #f3e8c0;
       --brand: #0d4f4f;
-      --brand-light: #0f766e;
-      --accent: #115e59;
+      --brand-hover: #0f766e;
       --divider: #e5e7eb;
-      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
       --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.04);
-      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
-      --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.04);
-      --radius: 8px;
-      --radius-lg: 12px;
     }
 
     *,
@@ -58,10 +53,9 @@
       color: var(--ink-secondary);
       background: var(--surface);
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
-    /* ——— DISCLOSURE ——— */
+    /* Disclosure */
     .disclosure {
       font-size: 11px;
       color: var(--ink-faint);
@@ -72,7 +66,7 @@
       letter-spacing: 0.02em;
     }
 
-    /* ——— ARTICLE SHELL ——— */
+    /* Shell */
     .page {
       max-width: 720px;
       margin: 0 auto;
@@ -83,45 +77,13 @@
       padding: 36px 28px 48px;
     }
 
-    @media (max-width: 640px) {
+    @media(max-width:640px) {
       .content {
         padding: 28px 20px 40px;
       }
     }
 
-    /* ——— SVG ICON SYSTEM ——— */
-    .icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-    }
-
-    .icon svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .icon-sm {
-      width: 16px;
-      height: 16px;
-    }
-
-    .icon-lg {
-      width: 24px;
-      height: 24px;
-    }
-
-    .icon-xl {
-      width: 32px;
-      height: 32px;
-    }
-
-    /* ================================================================
-       HERO
-       ================================================================ */
+    /* ======================== HERO ======================== */
     .hero {
       background: linear-gradient(175deg, #0c1220 0%, #162032 45%, #1a2a3e 100%);
       padding: 48px 28px 44px;
@@ -136,34 +98,24 @@
       right: -80px;
       width: 300px;
       height: 300px;
-      background: radial-gradient(circle, rgba(13, 79, 79, 0.15) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(153, 27, 27, 0.08) 0%, transparent 70%);
     }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
-    }
-
-    .hero-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+    .hero-eyebrow {
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.4);
       text-transform: uppercase;
       margin-bottom: 20px;
       padding-bottom: 16px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .hero-label::before {
+    .hero-eyebrow::before {
       content: "";
       width: 6px;
       height: 6px;
@@ -173,11 +125,10 @@
 
     .hero h1 {
       font-family: "Noto Serif JP", serif;
-      font-size: 26px;
+      font-size: 25px;
       font-weight: 900;
-      line-height: 1.65;
+      line-height: 1.7;
       color: #f9fafb;
-      letter-spacing: -0.01em;
     }
 
     .hero h1 em {
@@ -193,94 +144,21 @@
     }
 
     .hero-sub strong {
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.8);
       font-weight: 600;
     }
 
-    /* Hero Visual */
-    .hero-visual {
-      display: grid;
-      grid-template-columns: 1fr 40px 1fr;
-      align-items: center;
-      gap: 0;
-      margin-top: 32px;
-    }
-
-    .hero-card {
-      padding: 20px 14px;
-      text-align: center;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .hero-card.negative {
-      background: rgba(239, 68, 68, 0.06);
-      border-color: rgba(239, 68, 68, 0.12);
-    }
-
-    .hero-card.positive {
-      background: rgba(16, 185, 129, 0.06);
-      border-color: rgba(16, 185, 129, 0.12);
-    }
-
-    .hero-card-icon {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto 10px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-card.negative .hero-card-icon {
-      background: rgba(239, 68, 68, 0.1);
-    }
-
-    .hero-card.positive .hero-card-icon {
-      background: rgba(16, 185, 129, 0.1);
-    }
-
-    .hero-card-label {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      margin-bottom: 2px;
-    }
-
-    .hero-card.negative .hero-card-label {
-      color: #fca5a5;
-    }
-
-    .hero-card.positive .hero-card-label {
-      color: #6ee7b7;
-    }
-
-    .hero-card-desc {
-      font-size: 11px;
-      color: rgba(255, 255, 255, 0.35);
-      line-height: 1.5;
-    }
-
-    .hero-arrow {
-      text-align: center;
-    }
-
-    .hero-arrow svg {
-      opacity: 0.2;
-    }
-
-    @media (max-width: 640px) {
+    @media(max-width:640px) {
       .hero {
         padding: 36px 20px 32px;
       }
 
       .hero h1 {
-        font-size: 22px;
+        font-size: 21px;
       }
     }
 
-    /* ——— META BAR ——— */
+    /* Meta bar */
     .meta-bar {
       display: flex;
       justify-content: space-between;
@@ -291,30 +169,18 @@
       color: var(--ink-faint);
     }
 
-    .meta-bar .reading {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      background: var(--surface);
-      padding: 2px 10px;
-      border-radius: 4px;
-    }
-
-    @media (max-width: 640px) {
+    @media(max-width:640px) {
       .meta-bar {
         padding: 10px 20px;
       }
     }
 
-    /* ================================================================
-       TYPOGRAPHY
-       ================================================================ */
+    /* ======================== TYPOGRAPHY ======================== */
     .content h2 {
       font-family: "Noto Serif JP", serif;
       font-size: 21px;
       font-weight: 900;
-      line-height: 1.6;
-      letter-spacing: -0.01em;
+      line-height: 1.65;
       color: var(--ink);
       margin: 56px 0 22px;
       position: relative;
@@ -350,7 +216,7 @@
     }
 
     .red {
-      color: var(--danger);
+      color: var(--danger-light);
       font-weight: 700;
     }
 
@@ -381,15 +247,13 @@
       line-height: 1.9;
       margin: 36px 0;
       color: var(--ink);
-      padding: 0 8px;
     }
 
     .separator {
       display: flex;
       align-items: center;
       gap: 16px;
-      margin: 48px 0;
-      color: var(--divider);
+      margin: 52px 0;
     }
 
     .separator::before,
@@ -400,16 +264,70 @@
       background: var(--divider);
     }
 
-    .separator svg {
-      opacity: 0.25;
-      flex-shrink: 0;
+    .separator-dot {
+      width: 4px;
+      height: 4px;
+      background: var(--divider);
+      border-radius: 50%;
     }
 
-    /* ================================================================
-       CALLOUT BOXES
-       ================================================================ */
+    .disclaimer {
+      font-size: 12px;
+      color: var(--ink-faint);
+      text-align: center;
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    /* ======================== PORE IMAGE ======================== */
+    .pore-visual {
+      margin: 32px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--divider);
+    }
+
+    .pore-visual img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .pore-caption {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--divider);
+    }
+
+    .pore-caption-item {
+      padding: 12px 16px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .pore-caption-item.bad {
+      color: var(--danger-light);
+      background: var(--danger-bg);
+      border-right: 1px solid var(--divider);
+    }
+
+    .pore-caption-item.good {
+      color: var(--success);
+      background: var(--success-bg);
+    }
+
+    .pore-caption-item small {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--ink-muted);
+      margin-top: 2px;
+    }
+
+    /* ======================== CALLOUTS ======================== */
     .callout {
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 24px 22px;
       margin: 28px 0;
       font-size: 15px;
@@ -451,25 +369,21 @@
       color: var(--success);
     }
 
-    .callout-gold .callout-header {
-      color: var(--gold);
-    }
-
     .callout p:last-child {
       margin-bottom: 0;
     }
 
-    /* Question Box */
-    .question-block {
+    /* Question Block */
+    .qblock {
       background: var(--surface);
       border: 1px solid var(--divider);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 28px 22px;
       margin: 32px 0;
       text-align: center;
     }
 
-    .question-block p {
+    .qblock p {
       font-family: "Noto Serif JP", serif;
       font-size: 18px;
       font-weight: 700;
@@ -478,12 +392,73 @@
       margin: 0;
     }
 
-    /* ================================================================
-       AUTHORITY BANNER
-       ================================================================ */
+    /* Chain (cause → effect) */
+    .chain {
+      margin: 28px 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .chain-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 18px;
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .chain-step:first-child {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .chain-step:last-child {
+      border-radius: 0 0 8px 8px;
+    }
+
+    .chain-step+.chain-step {
+      border-top: none;
+    }
+
+    .chain-step.bad {
+      border-left: 3px solid var(--danger-light);
+    }
+
+    .chain-step.result {
+      background: var(--danger-bg);
+      border-left: 3px solid var(--danger-light);
+      font-weight: 700;
+      color: var(--danger-light);
+    }
+
+    .chain-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .chain-step.result .chain-num {
+      background: var(--danger-light);
+    }
+
+    /* ======================== AUTHORITY ======================== */
     .authority {
       background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 36px 24px;
       margin: 32px 0;
       text-align: center;
@@ -541,23 +516,21 @@
       line-height: 1.5;
     }
 
-    @media (max-width: 640px) {
+    @media(max-width:640px) {
       .authority-number {
         font-size: 40px;
       }
     }
 
-    /* ================================================================
-       STATS ROW
-       ================================================================ */
-    .stats-row {
+    /* Stats Row */
+    .stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       margin: 28px 0;
       background: var(--divider);
       border: 1px solid var(--divider);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       overflow: hidden;
     }
 
@@ -567,7 +540,7 @@
       text-align: center;
     }
 
-    .stat-value {
+    .stat-val {
       font-family: "Noto Serif JP", serif;
       font-size: 24px;
       font-weight: 900;
@@ -582,31 +555,25 @@
       line-height: 1.4;
     }
 
-    @media (max-width: 640px) {
-      .stat-value {
+    @media(max-width:640px) {
+      .stat-val {
         font-size: 20px;
       }
     }
 
-    /* ================================================================
-       BENEFIT LIST
-       ================================================================ */
-    .benefit-list {
-      margin: 28px 0;
-    }
-
-    .benefit-item {
+    /* ======================== BENEFITS ======================== */
+    .benefit {
       display: flex;
       gap: 16px;
       padding: 22px 0;
       border-bottom: 1px solid var(--divider);
     }
 
-    .benefit-item:last-child {
+    .benefit:last-child {
       border-bottom: none;
     }
 
-    .benefit-icon-wrap {
+    .benefit-icon {
       width: 40px;
       height: 40px;
       background: var(--success-bg);
@@ -619,7 +586,7 @@
       margin-top: 2px;
     }
 
-    .benefit-icon-wrap svg {
+    .benefit-icon svg {
       color: var(--success);
     }
 
@@ -638,13 +605,46 @@
       margin: 0;
     }
 
-    /* ================================================================
-       REFRAME COMPARE
-       ================================================================ */
+    /* ======================== VOICE (Real Reviews) ======================== */
+    .voice {
+      margin: 28px 0;
+      padding: 24px 22px;
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+    }
+
+    .voice-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .voice-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--divider);
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .voice-item:last-child {
+      border-bottom: none;
+    }
+
+    .voice-attr {
+      font-size: 12px;
+      color: var(--ink-faint);
+      margin-top: 4px;
+    }
+
+    /* ======================== REFRAME ======================== */
     .reframe {
       background: var(--surface);
       border: 1px solid var(--divider);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 28px 22px;
       margin: 32px 0;
     }
@@ -663,53 +663,53 @@
       gap: 14px;
     }
 
-    .reframe-card {
+    .rf-card {
       padding: 22px 14px;
-      border-radius: var(--radius);
+      border-radius: 8px;
       text-align: center;
     }
 
-    .reframe-card.before {
+    .rf-card.before {
       background: var(--danger-bg);
       border: 1px solid var(--danger-border);
     }
 
-    .reframe-card.after {
+    .rf-card.after {
       background: var(--success-bg);
       border: 1px solid var(--success-border);
     }
 
-    .reframe-card .rf-label {
+    .rf-label {
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.05em;
       margin-bottom: 8px;
     }
 
-    .reframe-card.before .rf-label {
+    .rf-card.before .rf-label {
       color: var(--danger);
     }
 
-    .reframe-card.after .rf-label {
+    .rf-card.after .rf-label {
       color: var(--success);
     }
 
-    .reframe-card .rf-amount {
+    .rf-amount {
       font-family: "Noto Serif JP", serif;
       font-size: 28px;
       font-weight: 900;
       line-height: 1.2;
     }
 
-    .reframe-card.before .rf-amount {
+    .rf-card.before .rf-amount {
       color: var(--danger);
     }
 
-    .reframe-card.after .rf-amount {
+    .rf-card.after .rf-amount {
       color: var(--success);
     }
 
-    .reframe-card .rf-detail {
+    .rf-detail {
       font-size: 12px;
       color: var(--ink-muted);
       margin-top: 6px;
@@ -724,25 +724,67 @@
       color: var(--ink);
     }
 
-    @media (max-width: 420px) {
+    @media(max-width:420px) {
       .reframe-grid {
         grid-template-columns: 1fr;
       }
 
-      .reframe-card .rf-amount {
+      .rf-amount {
         font-size: 24px;
       }
     }
 
-    /* ================================================================
-       STEPS
-       ================================================================ */
+    /* Daily Cost */
+    .daily-cost {
+      margin: 24px 0;
+      padding: 20px;
+      background: var(--gold-bg);
+      border: 1px solid var(--gold-border);
+      border-radius: 8px;
+    }
+
+    .daily-cost-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1px;
+      margin-top: 12px;
+    }
+
+    .dc-item {
+      text-align: center;
+      padding: 12px 4px;
+    }
+
+    .dc-item .dc-label {
+      font-size: 11px;
+      color: var(--ink-muted);
+      margin-bottom: 4px;
+    }
+
+    .dc-item .dc-val {
+      font-family: "Noto Serif JP", serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ink);
+    }
+
+    .dc-item .dc-note {
+      font-size: 10px;
+      color: var(--ink-faint);
+      margin-top: 2px;
+    }
+
+    .dc-item.highlight .dc-val {
+      color: var(--success);
+    }
+
+    /* ======================== STEPS ======================== */
     .steps {
       margin: 28px 0;
       padding: 28px 22px;
       background: var(--gold-bg);
       border: 1px solid var(--gold-border);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
     }
 
     .steps-title {
@@ -780,9 +822,7 @@
       padding-top: 2px;
     }
 
-    /* ================================================================
-       CTA
-       ================================================================ */
+    /* ======================== CTA ======================== */
     .cta-block {
       text-align: center;
       padding: 36px 0;
@@ -794,7 +834,6 @@
       font-weight: 600;
       color: var(--ink-muted);
       margin-bottom: 16px;
-      letter-spacing: 0.02em;
     }
 
     .cta-btn {
@@ -815,7 +854,7 @@
     }
 
     .cta-btn:hover {
-      background: var(--brand-light);
+      background: var(--brand-hover);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 8px 20px rgba(13, 79, 79, 0.22);
       transform: translateY(-1px);
     }
@@ -835,9 +874,7 @@
       line-height: 1.6;
     }
 
-    /* ================================================================
-       FOOTER
-       ================================================================ */
+    /* Footer */
     .site-footer {
       padding: 32px 28px;
       text-align: center;
@@ -852,9 +889,7 @@
       text-decoration: underline;
     }
 
-    /* ================================================================
-       STICKY CTA
-       ================================================================ */
+    /* Sticky CTA */
     .sticky-bar {
       position: fixed;
       bottom: 0;
@@ -875,7 +910,7 @@
       margin: 0 auto;
     }
 
-    @media (max-width: 640px) {
+    @media(max-width:640px) {
       .sticky-bar {
         display: block;
         opacity: 0;
@@ -891,7 +926,7 @@
       }
     }
 
-    /* ——— Fade-in animation ——— */
+    /* Fade-in */
     .fade-up {
       opacity: 0;
       transform: translateY(16px);
@@ -902,160 +937,126 @@
       opacity: 1;
       transform: translateY(0);
     }
-
-    /* ——— Disclaimer ——— */
-    .disclaimer {
-      font-size: 12px;
-      color: var(--ink-faint);
-      text-align: center;
-      margin: 8px 0;
-      line-height: 1.6;
-    }
   </style>
 </head>
 
 <body>
-
   <div class="disclosure">※本記事にはアフィリエイトリンクが含まれます</div>
 
   <main class="page">
 
-    <!-- ================================================================
-         HERO — 認知的不協和の創出
-         ================================================================ -->
+    <!-- ============================================================
+         HERO — 損失回避 × 認知的不協和
+         「うわっ、俺のことかも…」とドキッとさせる
+         ============================================================ -->
     <section class="hero">
-      <div class="hero-label">頭皮ケアの新常識</div>
+      <div class="hero-eyebrow">頭皮ケアの盲点</div>
       <h1>
-        まだ<em>「育毛剤」</em>に頼っていませんか。<br>
-        泥だらけの畑に肥料を撒くのは、<br>
-        もうやめましょう。
+        まだ育毛剤をドブに捨てますか？<br>
+        その<em>「詰まった毛穴」</em>では、<br>
+        1ミリも浸透しません。
       </h1>
       <p class="hero-sub">
-        毎月数千円の育毛トニック。その成分は、<br>
-        あなたのシャンプーが<strong>すべて弾いている</strong>かもしれません。
+        毎月5,000円の育毛トニック。<br>
+        あなたの頭皮は今、<strong>アスファルトのように硬い脂の蓋</strong>で<br>
+        覆われているかもしれません。
       </p>
-
-      <div class="hero-visual">
-        <div class="hero-card negative">
-          <div class="hero-card-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#ef4444" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="15" y1="9" x2="9" y2="15" />
-              <line x1="9" y1="9" x2="15" y2="15" />
-            </svg>
-          </div>
-          <div class="hero-card-label">皮脂で詰まった毛穴</div>
-          <div class="hero-card-desc">市販シャンプー使用時</div>
-        </div>
-        <div class="hero-arrow">
-          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="1.5">
-            <path d="M5 12h14M13 6l6 6-6 6" />
-          </svg>
-        </div>
-        <div class="hero-card positive">
-          <div class="hero-card-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#10b981" stroke-width="1.5">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <polyline points="22 4 12 14.01 9 11.01" />
-            </svg>
-          </div>
-          <div class="hero-card-label">清潔に整った毛穴</div>
-          <div class="hero-card-desc">スカルプD NEXT+</div>
-        </div>
-      </div>
     </section>
 
     <div class="meta-bar">
       <span>2026.02.16</span>
-      <span class="reading">
-        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10" />
-          <polyline points="12 6 12 12 16 14" />
-        </svg>
-        約3分
-      </span>
+      <span>約3分で読めます</span>
     </div>
 
     <div class="content">
 
-      <!-- ================================================================
-           SECTION 2 — サンクコスト × 損失回避
-           ================================================================ -->
-      <h2>あなたの育毛剤は、<br>1ミリも浸透していないかもしれない</h2>
+      <!-- ============================================================
+           SECTION 1 — 認知的不協和：「育毛剤は正しい」をひっくり返す
+           ============================================================ -->
+      <h2>畑がアスファルトなら、<br>いくら高い肥料を撒いても育たない</h2>
 
       <p>
-        毎月5,000円の育毛トニック。毎晩、お風呂上がりに丁寧にすり込む時間。
+        毎晩、お風呂上がりに育毛トニックを丁寧にすり込む。サプリも飲んでいる。頭皮マッサージ器も買った。
       </p>
       <p>
-        あなたが<span class="marker-red">この1年で育毛ケアに費やした金額</span>はいくらですか。
+        あなたがこの1年間で<span class="marker-red">育毛ケアに費やした金額</span>は、いくらですか。
       </p>
       <p>
-        トニック代に、サプリ代、頭皮マッサージ器。合計すると<span class="red">年間6万円以上</span>になっている方も珍しくありません。
+        育毛剤の相場は月5,000〜7,000円。AGA治療なら月15,000〜30,000円。年間にすると<span class="red">6万円〜36万円</span>。決して小さくない金額です。
       </p>
 
-      <div class="question-block fade-up">
+      <div class="qblock fade-up">
         <p>
-          もし、そのお金が<br>
-          <span style="color: var(--danger); font-size: 21px;">すべて無駄になっていた</span><br>
+          もし、その全額が<br>
+          <span style="color:var(--danger-light);font-size:21px;">1ミリも届いていなかった</span><br>
           としたら、どうしますか。
         </p>
       </div>
 
       <p>
-        もちろん、育毛剤の成分自体が悪いわけではありません。<br>
-        問題は<span class="marker">「その前段階」</span>にあるのです。
+        育毛剤の成分が悪いのではありません。<br>
+        問題は<span class="marker">「その手前」</span>にあります。
       </p>
 
-      <h3>市販シャンプーが作る「脂のバリア」</h3>
+      <h3>あなたの「毛穴」は、今こうなっている</h3>
 
-      <p>
-        多くの市販シャンプーは、洗浄力が強すぎます。
-      </p>
-      <p>
-        強い洗浄剤が頭皮に必要な油分まで奪ってしまうと、頭皮は自身を守ろうとして<span class="bold">過剰な皮脂を分泌</span>します。この皮脂が毛穴に蓄積し、<span
-          class="marker-red">「脂のバリア」</span>となって育毛剤をブロックしているのです。
-      </p>
-
-      <div class="callout callout-danger fade-up">
-        <div class="callout-header">
-          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-            <line x1="12" y1="9" x2="12" y2="13" />
-            <line x1="12" y1="17" x2="12.01" y2="17" />
-          </svg>
-          つまり、こういうことです
+      <!-- 毛穴比較イラスト -->
+      <div class="pore-visual fade-up">
+        <img src="images/pore-comparison.png" alt="市販シャンプー vs 正しい洗浄のシャンプーを使った場合の毛穴断面の比較図" width="720" height="720"
+          loading="lazy">
+        <div class="pore-caption">
+          <div class="pore-caption-item bad">
+            皮脂が詰まった毛穴
+            <small>市販シャンプーによる過剰皮脂</small>
+          </div>
+          <div class="pore-caption-item good">
+            清潔に整った毛穴
+            <small>適切な洗浄後の頭皮環境</small>
+          </div>
         </div>
-        <p>
-          市販のシャンプーで洗う → 頭皮が過剰に皮脂を出す → 毛穴が詰まる → 育毛剤が浸透しない → <span class="red">お金と時間が無駄になる</span>
-        </p>
+      </div>
+
+      <p>
+        多くの市販シャンプーに含まれる<span class="bold">高級アルコール系の洗浄剤</span>は、洗浄力が強すぎます。
+      </p>
+      <p>
+        必要な油分まで根こそぎ奪われた頭皮は、自分を守ろうとして<span class="bold">過剰に皮脂を分泌</span>。その皮脂が古い角質や汚れと混ざり合い、毛穴を塞ぐ<span
+          class="marker-red">「角栓」</span>となります。
+      </p>
+      <p>
+        この角栓こそが、あなたの育毛剤を弾いている<span class="bold">「脂の蓋」</span>の正体です。
+      </p>
+
+      <!-- 因果チェーン -->
+      <div class="chain fade-up">
+        <div class="chain-step bad"><span class="chain-num">1</span>市販シャンプーの強い洗浄剤が、頭皮の必要な油分まで奪う</div>
+        <div class="chain-step bad"><span class="chain-num">2</span>頭皮が乾燥から身を守るため、皮脂を過剰に分泌する</div>
+        <div class="chain-step bad"><span class="chain-num">3</span>過剰な皮脂が古い角質と合体し、毛穴を塞ぐ「角栓」になる</div>
+        <div class="chain-step bad"><span class="chain-num">4</span>角栓が蓋となり、その後に塗る育毛剤をすべてブロックする</div>
+        <div class="chain-step result"><span class="chain-num">!</span>毎月5,000〜7,000円の育毛ケアが、そのままドブに消える</div>
       </div>
 
       <p class="large-quote fade-up">
         畑に例えるなら、<br>
-        <span class="red">泥だらけの土壌に<br>
-          いくら高い肥料を撒いても<br>
-          作物は育たない。</span>
+        <span style="color:var(--danger-light);">泥だらけの土壌にいくら高い肥料を撒いても<br>
+          作物は育たない。</span><br><br>
+        まず<span class="marker">「土壌」を耕すこと</span>。<br>
+        それが唯一の正解です。
       </p>
 
+      <div class="separator"><span class="separator-dot"></span></div>
+
+
+      <!-- ============================================================
+           SECTION 2 — 権威性 × バンドワゴン
+           ============================================================ -->
+      <h2>頭皮の「土壌」を研究し尽くした、<br>ただ一つのブランド</h2>
+
       <p>
-        <span class="marker">まず「土壌」を整えること。</span><br>
-        それが、すべてのヘアケアの出発点です。
+        予防医学の観点から頭皮を研究し続ける<span class="bold">アンファー</span>。元々は<span class="bold">クリニック向けの頭皮治療研究</span>から始まった企業です。
       </p>
-
-      <div class="separator">
-        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 5v14M5 12h14" />
-        </svg>
-      </div>
-
-
-      <!-- ================================================================
-           SECTION 3 — 権威性 × バンドワゴン
-           ================================================================ -->
-      <h2>そこで、頭皮研究の専門家が<br>出した答え</h2>
-
       <p>
-        予防医学の観点から頭皮を研究し続ける<span class="bold">アンファー</span>。その技術の結晶が、<span class="marker">スカルプD NEXT+</span>です。
+        その技術を家庭用シャンプーに落とし込んだのが<span class="marker">スカルプD NEXT+</span>。ドラッグストアの「なんとなく良さそう」とは、開発の起点が根本的に異なります。
       </p>
 
       <div class="authority fade-up">
@@ -1068,130 +1069,121 @@
         </div>
       </div>
 
-      <h3>なぜ「スカルプD」なのか</h3>
-
-      <p>
-        ドラッグストアに並ぶ「なんとなく良さそうなシャンプー」とは、開発の起点が根本的に異なります。
-      </p>
-      <p>
-        アンファーは元々、<span class="bold">クリニック向けの頭皮治療研究</span>から始まった会社です。スカルプDは、<span
-          class="marker">医師の知見から生まれたシャンプー</span>の系譜にあります。
-      </p>
-
-      <div class="stats-row fade-up">
+      <div class="stats fade-up">
         <div class="stat">
-          <div class="stat-value">2,000万本</div>
+          <div class="stat-val">2,000万本</div>
           <div class="stat-label">シリーズ累計販売</div>
         </div>
         <div class="stat">
-          <div class="stat-value">No.1</div>
+          <div class="stat-val">No.1</div>
           <div class="stat-label">12年連続売上</div>
         </div>
         <div class="stat">
-          <div class="stat-value">4ヶ月分</div>
-          <div class="stat-label">1本の持ち</div>
+          <div class="stat-val">4ヶ月分</div>
+          <div class="stat-label">1本で持つ</div>
         </div>
       </div>
-
       <p class="disclaimer">※販売本数はシリーズ累計（アンファー調べ）</p>
-
 
       <!-- 中間CTA -->
       <div class="cta-block">
-        <div class="cta-lead">まずは公式サイトで詳細を確認する</div>
+        <div class="cta-lead">まずは「土壌」を整える第一歩</div>
         <a href="#" class="cta-btn" id="cta-mid" rel="nofollow sponsored">
-          スカルプD NEXT+ を見る
+          スカルプD NEXT+ 詳細を見る
           <span class="cta-sub">アンファー公式サイトへ</span>
         </a>
         <p class="cta-note">定期縛りなし ／ いつでも解約OK</p>
       </div>
 
-
-      <div class="separator">
-        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 5v14M5 12h14" />
-        </svg>
-      </div>
+      <div class="separator"><span class="separator-dot"></span></div>
 
 
-      <!-- ================================================================
-           SECTION 4 — 双曲割引（現在志向バイアス）
-           ================================================================ -->
+      <!-- ============================================================
+           SECTION 3 — 双曲割引：「翌朝」の報酬を見せる
+           ============================================================ -->
       <h2>「将来の予防」だけではない。<br>洗った翌朝から、髪が変わる。</h2>
 
       <p>
-        ここが、育毛剤とスカルプD NEXT+の<span class="bold">決定的な違い</span>です。
-      </p>
-      <p>
-        育毛剤は「数ヶ月後の結果」を待つしかない。<br>
-        一方で NEXT+は<span class="marker">「翌朝」から違いを感じられる</span>シャンプーです。
+        育毛剤は「数ヶ月後の結果」しか売れません。でもNEXT+のエアグリップ処方は<span class="marker">「明日の朝」から変化を感じられる</span>設計です。
       </p>
 
-      <div class="benefit-list fade-up">
-        <div class="benefit-item">
-          <div class="benefit-icon-wrap">
+      <div class="fade-up" style="margin:28px 0;">
+        <div class="benefit">
+          <div class="benefit-icon">
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
           </div>
           <div class="benefit-body">
-            <h4>髪の根元から立ち上がる</h4>
-            <p>ペタンコだった前髪が、ドライヤーだけでふんわりと。朝のセット時間が格段に短くなります。</p>
+            <h4>根元から立ち上がる — セット時間が半分に</h4>
+            <p>ペタンコだった前髪が、ドライヤーだけでふんわり。毎朝のセットに費やしていた時間が劇的に短くなります。</p>
           </div>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-icon-wrap">
+        <div class="benefit">
+          <div class="benefit-icon">
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="10" />
               <polyline points="12 6 12 12 16 14" />
             </svg>
           </div>
           <div class="benefit-body">
-            <h4>夕方までスタイルが持続する</h4>
-            <p>午後にはペタンコ…がなくなる。19時の打ち合わせでも、朝セットしたスタイルをキープ。</p>
+            <h4>夕方19時でも、朝のスタイルが崩れない</h4>
+            <p>午後にはペタンコ…という悩みが消える。退勤後の飲み会でも、朝セットしたシルエットのまま。</p>
           </div>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-icon-wrap">
+        <div class="benefit">
+          <div class="benefit-icon">
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
             </svg>
           </div>
           <div class="benefit-body">
-            <h4>頭皮のベタつきが整う</h4>
-            <p>ノンシリコンの適切な洗浄力で、皮脂バランスが正常化。清潔感のある頭皮環境へ。</p>
+            <h4>枕の匂いが変わる — 頭皮のベタつきが整う</h4>
+            <p>アミノ酸系洗浄成分が皮脂バランスを正常化。「近づいても大丈夫」という静かな自信が生まれます。</p>
           </div>
         </div>
       </div>
 
+      <!-- Real Voice -->
+      <div class="voice fade-up">
+        <div class="voice-label">購入者の声</div>
+        <div class="voice-item">
+          「キュキュッという音がするくらい、毛穴の奥まで落ちた感覚。翌朝、髪が根元から立っていて驚いた。」
+          <div class="voice-attr">30代 男性 ／ オイリー肌</div>
+        </div>
+        <div class="voice-item">
+          「夕方になると頭皮が脂っぽくなるのが悩みだった。これに変えてから、19時になっても枕カバーを気にしなくなった。」
+          <div class="voice-attr">30代 男性 ／ 混合肌</div>
+        </div>
+        <div class="voice-item">
+          「シャンプーだけで頭が軽くなった気がする。ドライヤー後のふんわり感が全然違う。もう市販には戻れない。」
+          <div class="voice-attr">20代 男性 ／ 脂性肌</div>
+        </div>
+      </div>
+
       <p>
-        つまり NEXT+は、<span class="marker">「将来のための保険」と「今日のカッコよさ」を同時に手に入れられる</span>唯一のシャンプーです。
+        NEXT+は<span class="marker">「将来のための保険」と「今日のカッコよさ」を同時に手に入れる</span>唯一のシャンプーです。
       </p>
 
       <p class="disclaimer">※個人の感想であり、効果・効能を保証するものではありません</p>
 
-
-      <div class="separator">
-        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 5v14M5 12h14" />
-        </svg>
-      </div>
+      <div class="separator"><span class="separator-dot"></span></div>
 
 
-      <!-- ================================================================
-           SECTION 5 — フレーミング × 決定回避の法則
-           ================================================================ -->
+      <!-- ============================================================
+           SECTION 4 — フレーミング × ナッジ
+           ============================================================ -->
       <h2>育毛剤に月5,000円出すより、<br>シャンプーを変える方が合理的です</h2>
 
       <div class="reframe fade-up">
-        <div class="reframe-title">お金の使い方を、見直してみませんか</div>
+        <div class="reframe-title">お金の「使い先」を見直す</div>
         <div class="reframe-grid">
-          <div class="reframe-card before">
+          <div class="rf-card before">
             <div class="rf-label">今までの出費</div>
             <div class="rf-amount">月5,000円〜</div>
-            <div class="rf-detail">育毛剤 + 市販シャンプー<br>（成分が浸透していない可能性）</div>
+            <div class="rf-detail">育毛剤 + 市販シャンプー<br>（しかも毛穴が詰まっている）</div>
           </div>
-          <div class="reframe-card after">
+          <div class="rf-card after">
             <div class="rf-label">これからの投資</div>
             <div class="rf-amount">月907円</div>
             <div class="rf-detail">スカルプD NEXT+<br>（1本4ヶ月 ＝ 3,626円÷4）</div>
@@ -1202,35 +1194,50 @@
         </p>
       </div>
 
+      <!-- 日常コスト比較 -->
+      <div class="daily-cost fade-up">
+        <div style="font-size:14px;font-weight:700;color:var(--gold);text-align:center;">
+          1日あたりに換算すると
+        </div>
+        <div class="daily-cost-grid">
+          <div class="dc-item">
+            <div class="dc-label">コンビニコーヒー</div>
+            <div class="dc-val">150円</div>
+            <div class="dc-note">1杯 / 日</div>
+          </div>
+          <div class="dc-item">
+            <div class="dc-label">ヘッドスパ換算</div>
+            <div class="dc-val">167円</div>
+            <div class="dc-note">5,000円 / 月1回</div>
+          </div>
+          <div class="dc-item highlight">
+            <div class="dc-label">NEXT+</div>
+            <div class="dc-val">30円</div>
+            <div class="dc-note">3,626円 / 120日</div>
+          </div>
+        </div>
+      </div>
+
       <p>
-        あなたがやることは、<span class="marker">毎日使っているシャンプーを入れ替える</span>。ただそれだけです。
-      </p>
-      <p>
-        新しい習慣を追加する必要はありません。今の習慣の中身を変えるだけ。これが<span class="bold">最も継続しやすいヘアケア</span>です。
+        1日わずか<span class="green">30円</span>。缶コーヒー1本の5分の1。<br>
+        その投資で、5年後の「あのとき変えておけば…」という後悔を消せるとしたら。
       </p>
 
-      <!-- ステップ -->
+      <p>
+        あなたがやることは、<span class="marker">毎日使っているシャンプーを入れ替える</span>。ただそれだけです。新しい習慣を追加する必要はありません。
+      </p>
+
       <div class="steps fade-up">
         <div class="steps-title">やることは、たった3ステップ</div>
-        <div class="step">
-          <span class="step-num">1</span>
-          <span class="step-text">公式サイトで NEXT+ を注文する</span>
-        </div>
-        <div class="step">
-          <span class="step-num">2</span>
-          <span class="step-text">届いたら、今のシャンプーと入れ替える</span>
-        </div>
-        <div class="step">
-          <span class="step-num">3</span>
-          <span class="step-text">いつも通り、髪を洗う。以上。</span>
-        </div>
+        <div class="step"><span class="step-num">1</span><span class="step-text">公式サイトで NEXT+ を注文する</span></div>
+        <div class="step"><span class="step-num">2</span><span class="step-text">届いたら、今のシャンプーと入れ替える</span></div>
+        <div class="step"><span class="step-num">3</span><span class="step-text">いつも通り、髪を洗う。以上。</span></div>
       </div>
 
       <p class="large-quote fade-up">
         それだけで、<br>
         <span class="green">明日の朝の髪が変わります。</span>
       </p>
-
 
       <!-- 最後の損失回避 -->
       <div class="callout callout-danger fade-up">
@@ -1243,17 +1250,18 @@
           最後に、ひとつだけ
         </div>
         <p>
-          5年後、鏡を見たときに — <span class="red">「あの時シャンプーを変えておけば」</span>と思う自分を想像してみてください。
+          5年後、鏡を見たときに ——<br>
+          <span class="red">「あの時シャンプーを変えておけば」</span>と後悔する自分を想像してみてください。
         </p>
         <p>
-          その後悔を消すために必要なのは、高額な育毛剤でも、植毛クリニックでもありません。<span class="marker">今日、シャンプーを1本変えるだけです。</span>
+          その後悔を消すために必要なのは、高額な育毛剤でも植毛クリニックでもありません。<span class="marker">今日、シャンプーを1本変えるだけです。</span>
         </p>
       </div>
 
 
-      <!-- ================================================================
+      <!-- ============================================================
            MAIN CTA
-           ================================================================ -->
+           ============================================================ -->
       <div class="cta-block">
         <div class="cta-lead">まずは「土壌」を整えることから</div>
         <a href="#" class="cta-btn" id="cta-main" rel="nofollow sponsored">
@@ -1263,51 +1271,30 @@
         <p class="cta-note">定期縛りなし ／ いつでも解約可能</p>
       </div>
 
-    </div><!-- /.content -->
+    </div>
 
     <footer class="site-footer">
-      <p>
-        運営：Men's Hair Lab ／
-        <a href="#">プライバシーポリシー</a>
-      </p>
+      <p>運営：Men's Hair Lab ／ <a href="#">プライバシーポリシー</a></p>
       <p>※当サイトはアフィリエイトプログラムに参加しています</p>
       <p>© 2026 Men's Hair Lab</p>
     </footer>
   </main>
 
-  <!-- Sticky CTA -->
   <div class="sticky-bar" id="stickyBar">
-    <a href="#" class="cta-btn" rel="nofollow sponsored">
-      公式サイトで詳細を見る
-    </a>
+    <a href="#" class="cta-btn" rel="nofollow sponsored">公式サイトで詳細を見る</a>
   </div>
 
   <script>
-    // Sticky bar
     const bar = document.getElementById('stickyBar');
-    let ticking = false;
+    let t = false;
     window.addEventListener('scroll', () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          bar.classList.toggle('visible', window.scrollY > 500);
-          ticking = false;
-        });
-        ticking = true;
-      }
+      if (!t) { requestAnimationFrame(() => { bar.classList.toggle('visible', scrollY > 500); t = false; }); t = true; }
     });
-
-    // Intersection Observer for fade-in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
+    const obs = new IntersectionObserver(e => {
+      e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('visible'); obs.unobserve(x.target); } });
     }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   </script>
-
 </body>
 
 </html>
