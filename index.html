@@ -328,49 +328,71 @@
     }
 
     /* ============================================================
-       PRODUCT HERO — Full bleed product beauty shot
+       PRODUCT HERO — Typography-only premium section
        ============================================================ */
     .product-hero {
       position: relative;
       overflow: hidden;
+      padding: 100px 28px;
+      text-align: center;
+      background: radial-gradient(ellipse 60% 50% at 50% 60%, rgba(0, 210, 190, 0.08) 0%, transparent 70%);
     }
 
-    .product-hero img {
-      width: 100%;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-    }
-
-    .product-overlay {
+    .product-hero::before {
+      content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 48px 28px 32px;
-      background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 210, 190, 0.06) 0%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
     }
 
     .product-brand {
       font-size: 11px;
       font-weight: 500;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.3em;
       color: var(--accent);
       text-transform: uppercase;
-      margin-bottom: 8px;
+      margin-bottom: 24px;
     }
 
     .product-name {
       font-family: var(--serif);
-      font-size: 20px;
+      font-size: clamp(36px, 8vw, 64px);
       font-weight: 900;
       color: #fff;
-      line-height: 1.5;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+
+    .product-name .thin {
+      font-weight: 300;
+      font-size: 0.6em;
+      letter-spacing: 0.15em;
+      display: block;
+      margin-top: 8px;
+      color: rgba(255, 255, 255, 0.5);
     }
 
     .product-desc {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.5);
-      margin-top: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+
+    .product-line {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin: 32px auto 0;
+      opacity: 0.5;
     }
 
     /* ============================================================
@@ -1068,15 +1090,16 @@
     <div class="divider"></div>
 
     <!-- ==========================================
-         PRODUCT HERO — プレミアム商品ビジュアル
+         PRODUCT HERO — タイポグラフィのみ・プレミアム
          ========================================== -->
-    <section class="product-hero zoom-reveal">
-      <img src="images/product.png" alt="SCALP-D NEXT+" width="720" height="720" loading="lazy">
-      <div class="product-overlay">
-        <div class="product-brand">by ANGFA — 予防医学</div>
-        <div class="product-name">SCALP-D NEXT+</div>
-        <div class="product-desc">12年連続売上No.1ブランドが作った、次世代スカルプシャンプー。</div>
+    <section class="product-hero reveal">
+      <div class="product-brand">by ANGFA — 予防医学</div>
+      <div class="product-name">
+        SCALP-D<br>NEXT+
+        <span class="thin">PROTEIN 5 SHAMPOO</span>
       </div>
+      <div class="product-desc">12年連続売上No.1ブランドが作った、<br>次世代スカルプシャンプー。</div>
+      <div class="product-line"></div>
     </section>
 
 
